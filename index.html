@@ -1,82 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karim Baidar</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-6eEK+Lb2b7X2cGiRSksuFRWj+WoWt2/V/jdCgsS8vF8aQgPru+w/Wi5l6fk0ZlQ/F9G13dzB5Zbct3b9mKuJ6Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
-            text-align: center;
-            margin: 50px;
-        }
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-        }
+        <link rel="stylesheet" href="assets/css/styles.css">
 
-        img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            margin-top: 20px;
-        }
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-        h1 {
-            margin-top: 10px;
-            color: #333;
-        }
+        <title>Portfolio website complete</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+    
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">karim baidar</h1>
+                    <p>Enthusiastic Software Engineer with a passion for crafting solutions <br/>
+                    in the realms of AWS, Java, JavaScript, Python, web development, <br/> and data science. 
+                    Turning complex challenges into elegant <br/>
+                    and scalable code is not just a job; it's a creative pursuit. <br/>
+                    Let's build the future one line of code at a time!</p>
+                    <br/><br/>
+                    <a href="#" class="button">Contact</a>
+                </div>
 
-        .profile-links {
-            margin-top: 20px;
-        }
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/karimbaidar" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://stackoverflow.com/users/3154336/karim-baidar" class="home__social-icon"><i class='bx bxl-stack-overflow'></i></a>
+                    <a href="https://github.com/karimbaidar" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
 
-        .profile-links a {
-            text-decoration: none;
-            margin: 0 10px;
-            color: #333;
-        }
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image class="home__blob-img" x="50" y="60" href="kb.png"/>
+                        </g>
+                    </svg>
+                </div>
+            </section>
 
-        .profile-links i {
-            font-size: 30px;
-            margin-bottom: -8px;
-            margin-right: 5px;
-        }
+           
 
-        .description {
-            margin-top: 20px;
-            color: #555;
-            font-size: 16px;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <img src="karimbaidar.jpeg" alt="Karim Baidar">
-        <h1>Karim Baidar</h1>
-        <div class="profile-links">
-            <a href="https://stackoverflow.com/users/3154336/karim-baidar">
-                <i class="fab fa-stack-overflow"></i>
-                Stack Overflow
-            </a>
-            <a href="https://github.com/karimbaidar">
-                <i class="fab fa-github"></i>
-                GitHub
-            </a>
-            <a href="https://www.linkedin.com/in/karimbaidar/">
-                <i class="fab fa-linkedin"></i>
-                LinkedIn
-            </a>
-        </div>
-        <div class="description">
-            <p>Enthusiastic Software Engineer with a passion for crafting solutions in the realms of AWS, Java, JavaScript, Python, web development, and data science. Turning complex challenges into elegant and scalable code is not just a job; it's a creative pursuit. Let's build the future one line of code at a time!</p>
-        </div>
-    </header>
-</body>
+       
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
