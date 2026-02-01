@@ -28,12 +28,8 @@
   --z-back: -10;
   --z-fixed: 100;
 
-  /*===== NEW: fluid spacing helpers =====*/
-  --container-pad: clamp(16px, 4vw, 28px);
+  /*===== Responsive helpers =====*/
   --home-gap: clamp(1.25rem, 4vw, 3rem);
-  --radius: 18px;
-
-  /*===== NEW: chip sizing =====*/
   --chip-font-size: clamp(0.75rem, 1.2vw, 0.875rem);
 }
 
@@ -162,10 +158,6 @@ img {
   color: #fff;
 }
 
-.nav__link:hover {
-  position: relative;
-}
-
 .nav__link:hover::after {
   position: absolute;
   content: "";
@@ -202,26 +194,26 @@ img {
   right: 0;
 }
 
-/*===== HOME (UPDATED FOR FULL RESPONSIVENESS) =====*/
+/*===== HOME (CLEAN, RESPONSIVE, IMAGE RIGHT, ICONS BOTTOM) =====*/
 .home {
   position: relative;
-  row-gap: var(--home-gap);
   padding: 4rem 0 5rem;
+  row-gap: var(--home-gap);
 }
 
-/* Make the grid fluid and predictable on all screens */
 .home.bd-grid {
   grid-template-columns: 1fr;
-  align-items: center;
+  align-items: start;
   gap: var(--home-gap);
 }
 
-/* Content block */
+/* left column uses flex so we can push icons to bottom on desktop */
 .home__data {
-  align-self: center;
+  display: flex;
+  flex-direction: column;
 }
 
-/* New: eyebrow title (role) */
+/* eyebrow / role */
 .home__eyebrow {
   display: inline-block;
   margin-bottom: 0.75rem;
@@ -231,7 +223,6 @@ img {
   color: rgba(14, 36, 49, 0.6);
 }
 
-/* Title: keep your variable sizing, but improve spacing */
 .home__title {
   font-size: var(--big-font-size);
   margin-bottom: 1rem;
@@ -243,7 +234,6 @@ img {
   color: var(--first-color);
 }
 
-/* New: better paragraph styling */
 .home__description {
   max-width: 65ch;
   line-height: 1.7;
@@ -251,8 +241,9 @@ img {
   color: rgba(14, 36, 49, 0.75);
 }
 
-/* New: skill chips that wrap cleanly */
+/* chips */
 .home__chips {
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
   gap: 0.6rem;
@@ -268,18 +259,17 @@ img {
   white-space: nowrap;
 }
 
-/* Social icons: responsive and touch-friendly */
+/* social icons at bottom of left column */
 .home__social {
   display: flex;
   flex-wrap: wrap;
   gap: 0.65rem;
+  margin-top: 1rem;
 }
 
-/* Override old column layout to be flexible */
 .home__social-icon {
   width: 44px;
   height: 44px;
-  margin: 0; /* important override */
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -297,17 +287,20 @@ img {
   background: rgba(255, 255, 255, 0.9);
 }
 
-/* Image: make it scale instead of being hard-positioned */
+/* image block: no absolute positioning */
 .home__img {
   position: relative;
   right: auto;
   bottom: auto;
-  width: min(420px, 90vw);
+  width: min(420px, 92vw);
   justify-self: center;
+  align-self: center;
 }
 
-/* Keep your blob fill */
 .home__blob {
+  width: 100%;
+  height: auto;
+  max-width: 420px;
   fill: var(--first-color);
 }
 
@@ -499,10 +492,6 @@ img {
     padding: 4rem 0 2rem;
   }
 
-  .home__img {
-    width: min(380px, 80vw);
-  }
-
   .about__container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -572,34 +561,23 @@ img {
     color: var(--second-color);
   }
 
-  /* Desktop home layout: two columns, no absolute image positioning */
+  /* Desktop home layout: text left, image right, icons pinned bottom */
   .home.bd-grid {
-    grid-template-columns: 1fr 0.9fr;
-    align-items: center;
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: stretch;
   }
 
   .home__img {
     justify-self: end;
   }
 
-  .about__container {
-    padding-top: 2rem;
+  .home__social {
+    margin-top: auto; /* push icons to bottom of left column */
   }
 
-  .about__img img {
-    width: 300px;
-  }
-
-  .skills__container {
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 2rem;
-    align-items: center;
-    text-align: initial;
-  }
-
-  .work__container {
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 2rem;
+  /* helps keep a nice hero height on desktop */
+  .home {
+    min-height: calc(100vh - var(--header-height));
   }
 }
 
