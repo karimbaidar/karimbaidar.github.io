@@ -1,61 +1,136 @@
-<section class="home bd-grid" id="home">
-  <div class="home__data">
-    <p class="home__eyebrow">AI Solutions Architect</p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <h1 class="home__title">Karim Baidar</h1>
+    <!-- IMPORTANT: keep ./ so GitHub Pages resolves correctly -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
 
-    <p class="home__description">
-      I’m an AI Solutions Architect and Software Engineer focused on designing and delivering production-ready AI
-      systems on Microsoft Azure. I build secure, scalable architectures that combine modern software engineering
-      with model development and deployment, backed by strong cloud foundations including Azure networking (VNets,
-      NSGs, Private Endpoints) and identity (Entra ID, RBAC). My work spans data and integration pipelines,
-      reliable APIs, and operational excellence through monitoring, governance, and cost control.
-    </p>
+    <!-- =====BOX ICONS===== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
-    <ul class="home__chips" aria-label="Core skills">
-      <li>Python</li>
-      <li>Azure AI & Azure ML</li>
-      <li>LLM Apps & RAG</li>
-      <li>Azure Networking (VNets, NSGs, Private Link)</li>
-      <li>Security (Key Vault, RBAC, Entra ID)</li>
-      <li>Containers (AKS, Container Apps)</li>
-      <li>APIs (API Management)</li>
-      <li>Data (Storage, SQL, Cosmos DB)</li>
-      <li>IaC (Terraform/Bicep)</li>
-      <li>Observability (Azure Monitor)</li>
-      <li>JavaScript</li>
-    </ul>
+    <title>Karim Baidar | AI Solutions Architect</title>
+  </head>
 
-    <!-- Social icons at the bottom -->
-    <div class="home__social" aria-label="Social links">
-      <a href="https://www.linkedin.com/in/karimbaidar" class="home__social-icon" aria-label="LinkedIn" target="_blank" rel="noreferrer">
-        <i class="bx bxl-linkedin"></i>
-      </a>
-      <a href="https://stackoverflow.com/users/3154336/karim-baidar" class="home__social-icon" aria-label="Stack Overflow" target="_blank" rel="noreferrer">
-        <i class="bx bxl-stack-overflow"></i>
-      </a>
-      <a href="https://github.com/karimbaidar" class="home__social-icon" aria-label="GitHub" target="_blank" rel="noreferrer">
-        <i class="bx bxl-github"></i>
-      </a>
-      <a href="https://medium.com/@karimbaidar" class="home__social-icon" aria-label="Medium" target="_blank" rel="noreferrer">
-        <i class="bx bxl-medium"></i>
-      </a>
-      <a href="https://www.hackerrank.com/profile/karimbaidar" class="home__social-icon" aria-label="HackerRank" target="_blank" rel="noreferrer">
-        <i class="bx bx-certification"></i>
-      </a>
-    </div>
-  </div>
+  <body>
+    <main class="l-main">
+      <!--===== HOME =====-->
+      <section class="home bd-grid" id="home">
+        <!-- LEFT: text + skills + icons at the bottom -->
+        <div class="home__data">
+          <p class="home__eyebrow">AI Solutions Architect</p>
 
-  <!-- Image on the right -->
-  <div class="home__img" aria-hidden="true">
-    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-      <mask id="mask0" mask-type="alpha">
-        <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-      </mask>
-      <g mask="url(#mask0)">
-        <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-        <image class="home__blob-img" x="50" y="60" href="kb.png"/>
-      </g>
-    </svg>
-  </div>
-</section>
+          <h1 class="home__title">Karim Baidar</h1>
+
+          <p class="home__description">
+            I’m an AI Solutions Architect and Software Engineer focused on designing and delivering production-ready AI
+            systems on Microsoft Azure. I build secure, scalable architectures that combine modern software engineering
+            with model development and deployment, backed by strong cloud foundations including Azure networking (VNets,
+            NSGs, Private Endpoints) and identity (Entra ID, RBAC). My work spans data and integration pipelines,
+            reliable APIs, and operational excellence through monitoring, governance, and cost control.
+          </p>
+
+          <ul class="home__chips" aria-label="Core skills">
+            <li>Python</li>
+            <li>Azure AI & Azure ML</li>
+            <li>LLM Apps & RAG</li>
+            <li>Azure Networking (VNets, NSGs, Private Link)</li>
+            <li>Security (Key Vault, RBAC, Entra ID)</li>
+            <li>Containers (AKS, Container Apps)</li>
+            <li>APIs (API Management)</li>
+            <li>Data (Storage, SQL, Cosmos DB)</li>
+            <li>IaC (Terraform/Bicep)</li>
+            <li>Observability (Azure Monitor)</li>
+            <li>JavaScript</li>
+          </ul>
+
+          <!-- Social icons BELOW the text (and pinned to bottom on desktop by CSS) -->
+          <div class="home__social" aria-label="Social links">
+            <a
+              href="https://www.linkedin.com/in/karimbaidar"
+              class="home__social-icon"
+              aria-label="LinkedIn"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i class="bx bxl-linkedin"></i>
+            </a>
+
+            <a
+              href="https://stackoverflow.com/users/3154336/karim-baidar"
+              class="home__social-icon"
+              aria-label="Stack Overflow"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i class="bx bxl-stack-overflow"></i>
+            </a>
+
+            <a
+              href="https://github.com/karimbaidar"
+              class="home__social-icon"
+              aria-label="GitHub"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i class="bx bxl-github"></i>
+            </a>
+
+            <a
+              href="https://medium.com/@karimbaidar"
+              class="home__social-icon"
+              aria-label="Medium"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i class="bx bxl-medium"></i>
+            </a>
+
+            <a
+              href="https://www.hackerrank.com/profile/karimbaidar"
+              class="home__social-icon"
+              aria-label="HackerRank"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i class="bx bx-certification"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- RIGHT: image -->
+        <div class="home__img" aria-hidden="true">
+          <svg
+            class="home__blob"
+            viewBox="0 0 479 467"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <mask id="mask0" mask-type="alpha">
+              <path
+                d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
+              />
+            </mask>
+
+            <g mask="url(#mask0)">
+              <path
+                d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.740 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
+              />
+              <image class="home__blob-img" x="50" y="60" href="kb.png" />
+            </g>
+          </svg>
+        </div>
+      </section>
+    </main>
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
