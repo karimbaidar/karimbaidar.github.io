@@ -1,5 +1,10 @@
 (function () {
   'use strict';
+  if (!window.React || !window.ReactDOM) {
+    var loadingNode = document.getElementById('root');
+    if (loadingNode) loadingNode.textContent = 'The site could not load React. Check your internet connection and refresh.';
+    return;
+  }
   var h = React.createElement;
   var F = React.Fragment;
   var navigation = [
