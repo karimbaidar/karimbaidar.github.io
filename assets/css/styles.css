@@ -88,6 +88,16 @@ h1,h2,h3{font-family:"Manrope",sans-serif}
 .focus-glyph{display:flex;align-items:center;justify-content:center;width:60px;height:60px;background:#eef2ff;color:var(--blue);border-radius:14px;font-size:28px;margin:30px 0 23px}
 .focus-card h3{font-size:19px;letter-spacing:-.04em;margin:0 0 10px;font-weight:800}
 .focus-card p{font-size:13px;line-height:1.8;color:var(--muted);margin:0;max-width:285px}
+.foundation-band{display:grid;grid-template-columns:0.9fr 1.1fr;gap:54px;background:#edf1fb;border:1px solid #dfe6f5;border-radius:14px;margin-top:22px;padding:34px 37px;align-items:center}
+.foundation-kicker{font-size:10px;letter-spacing:.17em;font-weight:800;color:var(--blue);margin:0 0 15px}
+.foundation-intro h3{font-size:21px;letter-spacing:-.035em;line-height:1.3;margin:0 0 10px}
+.foundation-intro>p:last-child{color:var(--muted);font-size:12px;line-height:1.8;margin:0;max-width:335px}
+.foundation-list{display:grid;gap:0}
+.foundation-item{display:grid;grid-template-columns:32px 1fr;gap:12px;align-items:start;padding:10px 0;border-bottom:1px solid #d5dfef}
+.foundation-item:last-child{border-bottom:0}
+.foundation-count{color:#8b99b3;font-size:10px;font-weight:800;padding-top:3px}
+.foundation-item strong{display:block;color:var(--ink);font-family:"Manrope",sans-serif;font-size:13px;letter-spacing:-.015em;margin-bottom:4px}
+.foundation-item div>span{display:block;color:var(--muted);font-size:11px;line-height:1.6}
 .connect-section{background:#ecf0fa;padding:110px 0}
 .connect-inner{display:grid;grid-template-columns:1fr 1fr;gap:12%;align-items:start}
 .connect-heading p{margin:22px 0 0;color:var(--muted);font-size:14px;line-height:1.8}
@@ -124,6 +134,8 @@ h1,h2,h3{font-family:"Manrope",sans-serif}
  .focus-glyph{margin:18px 0}
  .focus-heading{align-items:start;flex-direction:column;gap:16px}
  .focus-heading p{max-width:540px}
+ .foundation-band{grid-template-columns:1fr;gap:20px;padding:28px 25px}
+ .foundation-intro>p:last-child{max-width:540px}
  .connect-heading p{margin-bottom:5px}
 }
 @media(max-width:500px){
@@ -140,6 +152,8 @@ h1,h2,h3{font-family:"Manrope",sans-serif}
  .hero-actions{flex-direction:column;align-items:stretch}
  .btn{width:100%}
  .hero-tags span{font-size:10px}
+ .foundation-band{padding:25px 21px}
+ .foundation-intro h3{font-size:19px}
  .portrait-frame{height:390px}
  .portrait-top-label{top:22px;left:20px;font-size:8px}
  .portrait-bottom{left:14px;right:14px;bottom:14px;padding:13px 12px;font-size:9px}
