@@ -1,6 +1,6 @@
-# Zalaand Network website
+# Zalaand website
 
-This is the initial public-facing Zalaand concept site, written in **React 18** and using plain CSS. The current static version intentionally has no build step, so it can be served on GitHub Pages from a subdirectory or from its own future repository. React and ReactDOM are loaded from jsDelivr.
+This is the public-facing Zalaand product portfolio concept site, written in **React 18** and using plain CSS. The current static version intentionally has no build step, so it can be served on GitHub Pages from a subdirectory or from its own future repository. React and ReactDOM are loaded from jsDelivr.
 
 ## Preview location
 
@@ -31,4 +31,8 @@ Do not add a `CNAME` file to the personal `karimbaidar.github.io` repository: th
 
 ## Editorial notes
 
-This site deliberately presents the organization as **a vision in development**. Academy, Labs, Impact, Studio, Ventures and Institute are illustrative possibilities, not claims that branches have launched. Replace copy as formal structures, contact channels and registrations are confirmed.
+This site deliberately presents the organization as **a vision in development**. CommerceGuardian OS is the first featured product, linked to its own website. Future products are not presented as launched until confirmed. The Zalaand identity intentionally has no suffix such as Network, Group or Studio. Replace copy as formal structures, contact channels and registrations are confirmed.
+
+## Private GitHub + $0 public hosting
+
+Recommended: a private GitHub repository connected to Cloudflare Pages on the free plan. Cloudflare Pages can deploy a static React site from a private GitHub repository and serve the site publicly with a custom domain and HTTPS. Create a separate private GitHub repo, copy the contents of this folder to its root, and in Cloudflare Workers & Pages use Connect to Git. For this static no-build version, leave the build command blank and set the output directory to the repo root (`.`). To use the apex zalaand.org domain, add it to Cloudflare and use Cloudflare nameservers. Do not move private source into the personal public Pages repository.
