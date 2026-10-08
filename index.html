@@ -1,118 +1,143 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8fc">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Karim Baidar is an AI Solutions Architect focused on agent architectures, graph ontologies, and reasoning layers for dependable enterprise AI systems.">
+  <meta name="author" content="Karim Baidar">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Karim Baidar | AI Solutions Architect">
+  <meta property="og:description" content="Building the infrastructure that turns AI from a powerful demo into a production-grade problem-solving system.">
+  <meta property="og:url" content="https://karimbaidar.github.io/">
+  <title>Karim Baidar | AI Solutions Architect</title>
+  <link rel="canonical" href="https://karimbaidar.github.io/">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- IMPORTANT: keep ./ so GitHub Pages resolves correctly -->
-    <link rel="stylesheet" href="./assets/css/styles.css" />
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="Karim Baidar, home">
+        <span class="brand-mark" aria-hidden="true">kb<span>.</span></span>
+        <span class="brand-text">Karim Baidar</span>
+      </a>
 
-    <!-- =====BOX ICONS===== -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#focus">Focus</a>
+        <a href="#connect">Connect</a>
+      </nav>
+      <a class="nav-profile" href="https://github.com/karimbaidar" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
 
-    <title>Karim Baidar | AI Solutions Architect</title>
-  </head>
+  <main id="main">
+    <section class="hero container" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot" aria-hidden="true"></span> AI SOLUTIONS ARCHITECT</div>
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 id="hero-title">Karim<br>Baidar<span class="dot">.</span></h1>
+        <p class="hero-lead">I build AI systems that solve the enterprise problems today’s AI still struggles with: fragmented knowledge, weak reasoning, brittle automation, and decisions that fail to scale.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#about">Discover my work <span aria-hidden="true">↘</span></a>
+          <a class="btn btn-secondary" href="https://www.linkedin.com/in/karimbaidar" target="_blank" rel="noopener noreferrer">Connect on LinkedIn <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-tags" aria-label="Areas of expertise">
+          <span>Agent architectures</span><span>Graph ontologies</span><span>Reasoning layers</span>
+        </div>
+      </div>
 
-  <body>
-    <main class="l-main">
-      <!--===== HOME =====-->
-      <section class="home bd-grid" id="home">
-        <!-- LEFT: text + skills + icons at the bottom -->
-        <div class="home__data">
-          <p class="home__eyebrow">AI Solutions Architect</p>
-
-          <h1 class="home__title">Karim Baidar</h1>
-
-          <p class="home__description">
-            I build AI systems that solve the enterprise problems today’s AI still struggles with: fragmented knowledge, weak reasoning, brittle automation, and decisions that fail to scale. My work focuses on agent architectures, graph ontologies, and reasoning layers that help AI understand context, connect knowledge, and execute reliably in real-world environments. I’m building the infrastructure that turns AI from a powerful demo into a production-grade problem-solving system.
-          </p>
-
-          <!-- Social icons BELOW the text (and pinned to bottom on desktop by CSS) -->
-          <div class="home__social" aria-label="Social links">
-            <a
-              href="https://www.linkedin.com/in/karimbaidar"
-              class="home__social-icon"
-              aria-label="LinkedIn"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i class="bx bxl-linkedin"></i>
-            </a>
-
-            <a
-              href="https://stackoverflow.com/users/3154336/karim-baidar"
-              class="home__social-icon"
-              aria-label="Stack Overflow"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i class="bx bxl-stack-overflow"></i>
-            </a>
-
-            <a
-              href="https://github.com/karimbaidar"
-              class="home__social-icon"
-              aria-label="GitHub"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i class="bx bxl-github"></i>
-            </a>
-
-            <a
-              href="https://medium.com/@karimbaidar"
-              class="home__social-icon"
-              aria-label="Medium"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i class="bx bxl-medium"></i>
-            </a>
-
-            <a
-              href="https://www.hackerrank.com/profile/karimbaidar"
-              class="home__social-icon"
-              aria-label="HackerRank"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i class="bx bx-certification"></i>
-            </a>
+      <div class="hero-visual">
+        <div class="portrait-frame">
+          <div class="portrait-orbit orbit-one" aria-hidden="true"></div>
+          <div class="portrait-orbit orbit-two" aria-hidden="true"></div>
+          <span class="portrait-top-label" aria-hidden="true">TECHNOLOGY / KNOWLEDGE / REASONING</span>
+          <img class="portrait" src="./kb.png" alt="Portrait of Karim Baidar" width="650" height="700" fetchpriority="high">
+          <div class="portrait-bottom">
+            <span><span class="portrait-dot" aria-hidden="true"></span> Thinking beyond the demo</span>
+            <span aria-hidden="true">KB / 01</span>
           </div>
         </div>
+        <div class="portrait-note"><span class="note-line" aria-hidden="true"></span> Designing AI for real-world complexity.</div>
+      </div>
+    </section>
 
-        <!-- RIGHT: image -->
-        <div class="home__img" aria-hidden="true">
-          <svg
-            class="home__blob"
-            viewBox="0 0 479 467"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-          >
-            <mask id="mask0" mask-type="alpha">
-              <path
-                d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
-              />
-            </mask>
-
-            <g mask="url(#mask0)">
-              <path
-                d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.740 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
-              />
-              <image class="home__blob-img" x="50" y="60" href="kb.png" />
-            </g>
-          </svg>
+    <section class="about-section" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="section-heading-group">
+          <div class="section-kicker"><span>01</span> / ABOUT MY WORK</div>
+          <h2 id="about-title">From possibility<br>to <em>reliability.</em></h2>
         </div>
-      </section>
-    </main>
+        <div class="about-copy">
+          <p>My work focuses on agent architectures, graph ontologies, and reasoning layers that help AI understand context, connect knowledge, and execute reliably in real-world environments.</p>
+          <p>I’m building the infrastructure that turns AI from a powerful demo into a production-grade problem-solving system.</p>
+        </div>
+      </div>
+    </section>
 
-    <!--===== SCROLL REVEAL =====-->
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <section class="focus-section" id="focus" aria-labelledby="focus-title">
+      <div class="container">
+        <div class="focus-heading">
+          <div>
+            <div class="section-kicker"><span>02</span> / AREAS OF FOCUS</div>
+            <h2 id="focus-title">What I focus on<span class="dot">.</span></h2>
+          </div>
+          <p>Connecting ideas, knowledge and execution to make AI more capable and dependable.</p>
+        </div>
+        <div class="focus-grid">
+          <article class="focus-card">
+            <span class="focus-number">01 /</span>
+            <span class="focus-glyph" aria-hidden="true">✳</span>
+            <h3>Agent architectures</h3>
+            <p>Designing systems that can reason, coordinate and execute reliably.</p>
+          </article>
+          <article class="focus-card">
+            <span class="focus-number">02 /</span>
+            <span class="focus-glyph" aria-hidden="true">⌘</span>
+            <h3>Graph ontologies</h3>
+            <p>Helping AI connect fragmented knowledge and understand context.</p>
+          </article>
+          <article class="focus-card">
+            <span class="focus-number">03 /</span>
+            <span class="focus-glyph" aria-hidden="true">↗</span>
+            <h3>Reasoning layers</h3>
+            <p>Improving the quality of decisions in complex enterprise workflows.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-    <!--===== MAIN JS =====-->
-    <script src="assets/js/main.js"></script>
-  </body>
+    <section class="connect-section" id="connect" aria-labelledby="connect-title">
+      <div class="container connect-inner">
+        <div class="connect-heading">
+          <div class="section-kicker"><span>03</span> / LET'S CONNECT</div>
+          <h2 id="connect-title">Find me around<br>the web<span class="dot">.</span></h2>
+          <p>Ideas, code, conversations, and the occasional deep dive.</p>
+        </div>
+        <div class="social-list" aria-label="Profiles and social links">
+          <a href="https://www.linkedin.com/in/karimbaidar" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/karimbaidar" target="_blank" rel="noopener noreferrer"><span>GitHub</span><span aria-hidden="true">↗</span></a>
+          <a href="https://stackoverflow.com/users/3154336/karim-baidar" target="_blank" rel="noopener noreferrer"><span>Stack Overflow</span><span aria-hidden="true">↗</span></a>
+          <a href="https://medium.com/@karimbaidar" target="_blank" rel="noopener noreferrer"><span>Medium</span><span aria-hidden="true">↗</span></a>
+          <a href="https://www.hackerrank.com/profile/karimbaidar" target="_blank" rel="noopener noreferrer"><span>HackerRank</span><span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© 2026 Karim Baidar</span>
+      <span>Designed for clarity. Built to last.</span>
+      <a href="#home">Back to top <span aria-hidden="true">↑</span></a>
+    </div>
+  </footer>
+</body>
 </html>
